@@ -1,0 +1,18 @@
+@media screen and (max-width: 1199px) {
+  .logo {
+    // @include font(24px, 700, 28px, 0.02em);
+    font-family: var(--secondary-font);
+
+    color: var(--accent-color);
+
+    &_theme {
+      &_dark {
+        margin-right: 0;
+        color: var(--logo-dark-theme);
+      }
+      &_light {
+        color: var(--logo-light-theme);
+      }
+    }
+  }
+}
