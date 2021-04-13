@@ -4,11 +4,12 @@
 
 @media screen and (min-width: 768px) {
   .contact-list {
-    @include font(14px, 500, 16px, 0.02em);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    // @include font(14px, 500, 16px, 0.02em);
 
     &__item:first-child {
       margin-bottom: 10px;
@@ -24,23 +25,23 @@
         color: var(--accent-color);
       }
     }
-    .contact-list__icon-envelop,
-    .contact-list__icon-smartphone {
-      fill: #757575;
-      margin-right: 8px;
+  }
+  .contact-list__icon-envelop,
+  .contact-list__icon-smartphone {
+    fill: #757575;
+    margin-right: 8px;
 
-      transition: fill 250ms var(--timing-function);
-    }
+    transition: fill 250ms var(--timing-function);
+  }
 
-    .contact-list__link:hover .contact-list__icon-envelop,
-    .contact-list__link:focus .contact-list__icon-envelop {
-      fill: var(--accent-color);
-    }
+  .contact-list__link:hover .contact-list__icon-envelop,
+  .contact-list__link:focus .contact-list__icon-envelop {
+    fill: var(--accent-color);
+  }
 
-    .contact-list__link:hover .contact-list__icon-smartphone,
-    .contact-list__link:focus .contact-list__icon-smartphone {
-      fill: var(--accent-color);
-    }
+  .contact-list__link:hover .contact-list__icon-smartphone,
+  .contact-list__link:focus .contact-list__icon-smartphone {
+    fill: var(--accent-color);
   }
 }
 // .contact-list {
