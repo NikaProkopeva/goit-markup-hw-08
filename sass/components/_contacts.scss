@@ -4,12 +4,11 @@
 
 @media screen and (min-width: 768px) {
   .contact-list {
+    @include font(14px, 500, 16px, 0.02em);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    @include font(14px, 500, 16px, 0.02em);
 
     &__item:first-child {
       margin-bottom: 10px;

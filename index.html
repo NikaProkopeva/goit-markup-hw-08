@@ -91,43 +91,46 @@
             </ul>
             </nav>
 
-        <ul class="mobile-menu__contact-list list">
-            <li class="mobile-menu__contact-item">
-            
-                <a class="mobile-menu__link-tel link" href="tel:+380961111111">
-            
-                    +38 096 111 11 11</a>
-            </li>
-            <li class="mobile-menu__contact-item">
-        
-                <a class="mobile-menu__link-email link" href="mailto:info@devstudio.com">
-                   
-                    info@devstudio.com</a>
-            </li>
-          
-        </ul>
+            <div class="mobile-menu__wrapper">
+                <ul class="mobile-menu__contact-list list">
+                    <li class="mobile-menu__contact-item">
+                
+                        <a class="mobile-menu__link-tel link" href="tel:+380961111111">
+                
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contact-item">
+                
+                        <a class="mobile-menu__link-email link" href="mailto:info@devstudio.com">
+                
+                            info@devstudio.com</a>
+                    </li>
+                
+                </ul>
+                
+                <ul class="mobile-menu__social-list list">
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="mobile-menu__social-link link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="mobile-menu__social-link link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="mobile-menu__social-link link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
 
-        <ul class="mobile-menu__social-list list">
-            <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__social-link link">Instagram</a>
-            </li>
-            <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__social-link link">Twitter</a>
-            </li>
-            <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__social-link link">Facebook</a>
-            </li>
-            <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__social-link link">LinkedIn</a>
-            </li>
-        </ul>
         </div>
     </header>
     <main>
 
         <!-- section hero -->
 
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
 
                 
@@ -135,11 +138,11 @@
                 <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
             
             </div>
-        </section> -->
+        </section>
 
         <!-- Advanteges list -->
 
-        <!-- <section class="section advantages">
+        <section class="section advantages">
             <div class="container">
                 <h2 class="title visually-hidden">Advantages</h2>
                 
@@ -182,11 +185,11 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- about us -->
 
-        <!-- <section class="section product">
+        <section class="section product">
             <div class="container">
             <h2 class="title">Чем мы занимаемся</h2>
             <ul class="product-list list">
@@ -210,16 +213,33 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- Team members -->
 
-        <!-- <section class="team-members">
+        <section class="team-members section">
             <div class="container">
             <h2 class="title">Наша команда</h2>
             <ul class="member-list list">
                 <li class="member-list__item">
-                    <img class="member-list__img" src="./images/Team-members/igor-demiyaninko.jpg" alt="Продакт дизайнер" width="270" height="260">
+
+                    <picture>
+
+                        <source srcset="./images/desktop/Team-members/team-member-1.jpg 1x,
+                                        ./images/desktop/Team-members/team-member-1@2x.jpg 2x"
+                                         media="(min-width: 1200px)">
+
+                        <source srcset="./images/tablet/studio/team-member1.jpg 1x,
+                                         ./images/tablet/studio/team-member1@2.jpg 2x"
+                                         media="(min-width: 768px)">
+
+                        <source srcset="./images/mobile/studio/team-member1.jpg 1x, 
+                                       ./images/mobile/studio/team-member1@2.jpg 2x"
+                                        media="(max-width: 767px)">
+                        
+                        <img class="member-list__img" src="./images/Team-members/igor-demiyaninko.jpg" alt="Продакт дизайнер">
+                    </picture>
+                    
                    <div class="member-wrapper">
                     <h3 class="title-item">Игорь Демьяненко</h3>
                     <p class="description" lang="en">Product Designer</p>
@@ -369,7 +389,7 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
 
 
 
@@ -505,7 +525,7 @@
     </div>
     </footer> -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
            <button type="button" class="modal__close-btn" data-modal-close>
                <svg class="modal__icon-close-black" width="18" height="18">
@@ -564,7 +584,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
 
     <script src="./js/mobile-menu.js"></script>
 
