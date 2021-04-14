@@ -144,3 +144,20 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .sign-form__wrapper {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+  .sign-form__tittle {
+    margin-bottom: 20px;
+  }
+  .sign-form__input {
+    margin: 0 auto;
+  }
+  .sign-form__btn {
+    margin-top: 20px;
+  }
+}
