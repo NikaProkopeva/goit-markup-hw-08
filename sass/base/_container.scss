@@ -8,9 +8,6 @@
     justify-content: space-between;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
   @media screen and (min-width: 768px) {
     width: 768px;
     display: flex;
@@ -20,6 +17,10 @@
   @media screen and (max-width: 767px) {
     max-width: 480px;
     margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    max-width: 1200px;
   }
 }
 
