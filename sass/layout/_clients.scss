@@ -65,30 +65,10 @@
   }
 
   .client-list {
+    max-width: 1170px;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin-left: -30px;
-
-    &__item {
-      flex-basis: calc(100% / 6 - 30px);
-      margin-left: 30px;
-    }
   }
 }
-// .clients {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
-
-// .client-list {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-left: -30px;
-
-//   &__item {
-//     flex-basis: calc(100% / 4 - 30px);
-//     margin-left: 30px;
-//   }
-// }

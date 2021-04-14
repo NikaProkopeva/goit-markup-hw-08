@@ -5,3 +5,8 @@
   // border: 1px solid #eee;
   // border-top: none;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
+}
