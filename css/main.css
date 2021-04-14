@@ -396,8 +396,6 @@ img {
     max-width: 768px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 118px;
-    padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -616,13 +614,14 @@ img {
   }
   .member-list {
     display: flex;
+    flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
   }
   .member-list__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-trim: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -680,6 +679,21 @@ img {
   fill: #fff;
 }
 
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.client-list__item {
+  flex-basis: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .client-list__link {
   display: flex;
   align-items: center;
@@ -706,17 +720,35 @@ img {
 }
 
 @media screen and (win-width: 768px) {
-  .clients-list {
+  .client-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-left: -30px;
     margin-top: -30px;
   }
-  .clients-list__item {
+  .client-list__item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+  }
+}
+
+@media screen and (win-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .client-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+  }
+  .client-list__item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-left: 30px;
   }
 }
 
