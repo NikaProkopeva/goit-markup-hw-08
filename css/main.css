@@ -171,11 +171,11 @@ img {
   .nav {
     display: flex;
     align-items: center;
-    margin-left: 88px;
   }
   .menu {
     display: flex;
     align-items: center;
+    margin-left: 88px;
   }
   .menu__link {
     padding-top: 32px;
