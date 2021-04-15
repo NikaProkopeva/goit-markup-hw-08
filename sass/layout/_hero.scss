@@ -22,10 +22,10 @@
   max-width: 468px;
   margin: 0 auto;
   text-align: center;
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   &__title {
-    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
 
@@ -62,6 +62,10 @@
         ),
         url(../images/tablet/hero/hero-bg@2x.jpg);
     }
+
+    &__title {
+      width: 360px;
+    }
   }
 }
 
@@ -95,7 +99,9 @@
     }
 
     &__title {
-      max-width: 696px;
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
     }
   }
 }
@@ -122,8 +128,8 @@
 //     margin-bottom: 30px;
 
 //     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.36;
+// font-size: 44px;
+// line-height: 1.36;
 //     letter-spacing: 0.06em;
 //     text-transform: uppercase;
 //     color: var(--white-text-color);

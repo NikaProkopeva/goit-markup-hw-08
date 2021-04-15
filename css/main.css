@@ -397,7 +397,8 @@ img {
   max-width: 468px;
   margin: 0 auto;
   text-align: center;
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -407,7 +408,6 @@ img {
 }
 
 .hero__title {
-  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   font-size: 26px;
@@ -436,6 +436,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
@@ -458,7 +464,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero__title {
-    max-width: 696px;
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -466,8 +474,6 @@ img {
   min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
   margin: auto;
   border-radius: 4px;
   border: none;
@@ -802,6 +808,9 @@ img {
   }
   .join-wrapper {
     display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 60px;
   }
   .sign-form__input {
@@ -839,6 +848,7 @@ img {
     text-align: center;
   }
   .join-wrapper {
+    margin: 0;
     text-align: center;
     width: 206px;
   }
@@ -858,8 +868,16 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer .container {
-    max-width: 1200px;
+  .address-wrapper {
+    margin-right: 70px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .join-wrapper {
+    margin: 0;
+  }
+  .sign-form {
+    margin-left: 93px;
   }
 }
 
@@ -891,8 +909,6 @@ img {
 
 .join-wrapper {
   width: 206px;
-  height: 80;
-  margin-left: 70px;
 }
 
 .join {
@@ -974,7 +990,7 @@ img {
 }
 
 .sign-form__input {
-  width: 358px;
+  width: 100%;
   margin-right: 12px;
   height: 50px;
   padding-left: 16px;
@@ -995,6 +1011,15 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .sign-form {
+    margin-left: 0;
+  }
+  .sign-form__input {
+    width: 358px;
+  }
 }
 
 .backdrop {
