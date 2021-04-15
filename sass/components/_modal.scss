@@ -33,3 +33,19 @@
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
+
+@media screen and (min-width: 320px) {
+  .modal {
+    height: auto;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .modal {
+    max-width: 568px;
+    &__title {
+      @include font(20px, 700, 23px);
+    }
+  }
+}

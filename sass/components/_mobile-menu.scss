@@ -3,7 +3,7 @@
   top: 50%;
   left: 0;
   width: 100vw;
-  max-width: 480px;
+  // max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
 
@@ -17,6 +17,8 @@
 
   transform: translateX(100%) translateY(50%);
   transition: transform 250ms var(--timing-function);
+
+  z-index: 100;
 
   &__close-btn {
     position: absolute;

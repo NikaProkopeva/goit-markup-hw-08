@@ -31,6 +31,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .container {
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -66,5 +67,10 @@
     &__input {
       width: 450px;
     }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    max-width: 1200px;
   }
 }
