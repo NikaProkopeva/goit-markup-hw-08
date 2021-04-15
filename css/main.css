@@ -153,6 +153,8 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
   border-color: var(--main-bgr-color);
+  border: 1px solid #eee;
+  border-top: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -277,8 +279,8 @@ img {
 
 .mobile-menu {
   position: fixed;
-  top: 0;
-  left: 50%;
+  top: 50%;
+  left: 0;
   width: 100vw;
   max-width: 480px;
   height: 100vh;
@@ -288,7 +290,7 @@ img {
   justify-content: space-between;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  transform: translateY(-100%) translateX(-50%);
+  transform: translateX(100%) translateY(50%);
   transition: transform 250ms var(--timing-function);
 }
 
@@ -371,10 +373,6 @@ img {
   transition: transform 250ms var(--timing-function);
 }
 
-.mobile-menu__social-link:hover, .mobile-menu__social-link:focus {
-  transform: rotate(90deg);
-}
-
 @media screen and (max-width: 480px) {
   .mobile-menu__wrapper {
     max-width: 320px;
@@ -382,7 +380,7 @@ img {
 }
 
 .is-open {
-  transform: translateY(0) translateX(-50%);
+  transform: translateX(0) translateY(-50%);
 }
 
 @media screen and (min-width: 768px) {
@@ -410,7 +408,7 @@ img {
 
 .hero__title {
   max-width: 360px;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 30px;
   font-size: 26px;
   font-weight: 900;
@@ -465,7 +463,7 @@ img {
 }
 
 .modal-btn {
-  min-width: 136px;
+  min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
@@ -522,6 +520,14 @@ img {
 
 .advantages .title-item {
   text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .team-members .title,
+  .clients .title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 .description {
@@ -584,7 +590,6 @@ img {
 @media screen and (min-width: 1200px) {
   .product {
     display: block;
-    width: 1200px;
   }
   .product-list {
     display: flex;
@@ -622,13 +627,14 @@ img {
   background-color: var(--btn-background);
 }
 
+.member-list__img {
+  width: 100%;
+  height: auto;
+}
+
 .member-list__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.member-list__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .member-wrapper {
@@ -636,6 +642,20 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .member-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .team-list__item {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -722,7 +742,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -747,8 +766,6 @@ img {
   .client-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin-left: -30px;
     margin-top: -30px;
   }
@@ -759,17 +776,13 @@ img {
   }
 }
 
-@media screen and (win-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
   }
   .client-list {
-    max-width: 1170px;
-    display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -782,6 +795,28 @@ img {
   line-height: 1.7;
 }
 
+@media screen and (min-width: 320px) {
+  .address-wrapper {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .join-wrapper {
+    display: block;
+    margin-bottom: 60px;
+  }
+  .sign-form__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer .sign-form {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .container {
     display: flex;
@@ -792,9 +827,9 @@ img {
   .footer .logo {
     text-align: center;
   }
-}
-
-@media screen and (min-width: 768px) {
+  .sign-form__input {
+    width: 450px;
+  }
   .address-wrapper {
     margin-right: 165px;
     margin-bottom: 60px;
@@ -818,16 +853,6 @@ img {
   }
   .sign-form__input {
     width: 450px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .address-wrapper {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  .join-wrapper {
-    margin-bottom: 60px;
   }
 }
 
@@ -911,6 +936,7 @@ img {
 
 .sign-form__btn {
   display: flex;
+  margin: 0 auto;
   align-items: center;
   min-width: 200px;
   max-height: 50px;
@@ -941,8 +967,8 @@ img {
 }
 
 .sign-form__input {
+  width: 358px;
   margin-right: 12px;
-  min-width: 358px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
