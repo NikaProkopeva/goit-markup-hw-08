@@ -283,7 +283,6 @@ img {
   top: 50%;
   left: 0;
   width: 100vw;
-  max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
   display: flex;
@@ -776,7 +775,7 @@ img {
   margin-left: 93px;
 }
 
-.sign-form__tittle {
+.sign-form__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -904,7 +903,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .modal {
     max-width: 568px;
   }
@@ -934,10 +933,13 @@ img {
 .modal-form__field {
   position: relative;
   margin-bottom: 10px;
-  font-size: 12px;
-  line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+.modal-form__field, .modal-form__check-desc, .modal-form__link {
+  font-size: 12px;
+  line-height: 1.16;
 }
 
 .modal-form__input-wrapper {
@@ -1025,9 +1027,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: #757575;
 }
 
@@ -1060,7 +1060,7 @@ img {
     align-content: center;
     flex-direction: column;
   }
-  .sign-form__tittle {
+  .sign-form__title {
     margin-bottom: 20px;
   }
   .sign-form__input {
@@ -1068,6 +1068,18 @@ img {
   }
   .sign-form__btn {
     margin-top: 20px;
+  }
+  .checkbox-text-and-link {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__check-desc,
+  .modal-form__link {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

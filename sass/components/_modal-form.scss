@@ -14,10 +14,14 @@
     position: relative;
     margin-bottom: 10px;
 
-    font-size: 12px;
-    line-height: 1.16;
     letter-spacing: 0.01em;
     color: #757575;
+  }
+  &__field,
+  &__check-desc,
+  &__link {
+    font-size: 12px;
+    line-height: 1.16;
   }
 
   &__input-wrapper {
@@ -115,9 +119,7 @@
   align-items: center;
   margin-bottom: 30px;
 
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: #757575;
 
   &::before {
@@ -151,7 +153,7 @@
     align-content: center;
     flex-direction: column;
   }
-  .sign-form__tittle {
+  .sign-form__title {
     margin-bottom: 20px;
   }
   .sign-form__input {
@@ -159,5 +161,16 @@
   }
   .sign-form__btn {
     margin-top: 20px;
+  }
+  .checkbox-text-and-link {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__check-desc,
+  .modal-form__link {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
   }
 }
